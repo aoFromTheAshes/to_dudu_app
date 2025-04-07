@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Починаємо зверху */
+  min-height: 100vh;
+  margin: 0;
+  color: black;
+}
+
+.todo-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Розтягуємо по ширині */
+    max-width: 800px; /* Максимальна ширина */
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* Проміжок між елементами */
+    flex-wrap: wrap; /* Дозволяє переносити елементи */
+  }
+  
+  li h3, li p {
+    flex-grow: 1; /* Дає можливість тексту розтягуватись */
+    margin: 0;
+    min-width: 100px;
+  }
+  
+  li button {
+    flex-shrink: 0; /* Кнопки не стискаються */
+    min-width: 100px; /* Мінімальна ширина кнопок */
+  }
+  
